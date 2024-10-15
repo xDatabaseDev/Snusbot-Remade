@@ -1,6 +1,6 @@
 # Snusbase Discord Bot (Remake)
 
-🎉 **Bienvenue dans le remake open-source du célèbre bot Discord du serveur [Snusbase](https://discord.gg/snsubase) !** 🎉
+🎉 **Bienvenue dans le remake open-source du célèbre bot Discord du serveur [Snusbase](https://discord.gg/snusbase) !** 🎉
 
 Ce projet a pour but de recréer le bot original de Snusbase, tout en le rendant accessible gratuitement et facilement personnalisable. Grâce à cette version, tu pourras gérer ton propre bot avec un système de crédits et d'administration.
 
@@ -133,6 +133,6 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## ❤️ **Remerciements**
 
-Merci à [Snusbase](https://discord.gg/snsubase) pour l'inspiration ! Ce projet n'est pas affilié directement à Snusbase, mais vise à rendre leur bot accessible à tous.
+Merci à [Snusbase](https://discord.gg/snusbase) pour l'inspiration ! Ce projet n'est pas affilié directement à Snusbase, mais vise à rendre leur bot accessible à tous.
 
 ---
