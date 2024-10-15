@@ -73,10 +73,10 @@ bot = commands.Bot(command_prefix="-", intents=discord.Intents.all(), help_comma
 ```
 
 - Pour modifier le préfixe, remplacez simplement `"-"` par le symbole ou le mot de votre choix.
-  - Exemple pour changer le préfixe en `!` :
-    ```python
-    bot = commands.Bot(command_prefix="!", intents=discord.Intents.all(), help_command=None, activity=discord.Streaming(name="Snusbot by xDatabase", url="https://www.twitch.tv/rickyrollstar"), status=presence_type)
-    ```
+- Exemple pour changer le préfixe en `!` :
+  ```python
+  bot = commands.Bot(command_prefix="!", intents=discord.Intents.all(), help_command=None, activity=discord.Streaming(name="Snusbot by xDatabase", url="https://www.twitch.tv/rickyrollstar"), status=presence_type)
+  ```
 
 ### 2. **Configurer le Token du Bot**
 
@@ -92,6 +92,16 @@ TOKEN = "VOTRE_TOKEN_DISCORD_ICI"
 
 ```python
 bot.run(TOKEN)
+```
+
+### 3. **Configurer le Channel De Join**
+
+Pour configurer le channel où les gens seront avertis des nouveaux membres veuillez changer ces paramètres :
+
+- À la ligne **128**, changez le nom `génénral` par le nom du channel voulu :
+
+```python
+    invite_channel = discord.utils.get(guild.channels, name="génénral")  
 ```
 
 ⚠️ **Important :**  
