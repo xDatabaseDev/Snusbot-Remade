@@ -58,22 +58,21 @@ Ce projet a pour but de recréer le bot original de Snusbase, tout en le rendant
    python bot.py
    ```
 
-
 ---
 
 ## ⚙️ **Configuration**
 
-Le bot peut être configuré selon vos préférences en modifiant quelques lignes de code dans le fichier `bot.py` :
+Le bot peut être configuré de manière simple en modifiant quelques lignes dans le fichier `bot.py` :
 
 ### 1. **Changer le Préfixe des Commandes**
 
-Le préfixe utilisé pour les commandes du bot peut être modifié à la ligne **19** du fichier `bot.py`. Par défaut, le préfixe est défini comme `"-"`, mais vous pouvez le personnaliser à votre convenance.
+Le préfixe utilisé pour les commandes du bot se trouve à la ligne **19** du fichier `bot.py`. Par défaut, il est défini comme `"-"`, mais vous pouvez le personnaliser selon vos besoins.
 
 ```python
 bot = commands.Bot(command_prefix="-", intents=discord.Intents.all(), help_command=None, activity=discord.Streaming(name="Snusbot by xDatabase", url="https://www.twitch.tv/rickyrollstar"), status=presence_type)
 ```
 
-- Pour changer le préfixe, remplacez simplement `"-"` par le symbole ou le mot de votre choix.
+- Pour modifier le préfixe, remplacez simplement `"-"` par le symbole ou le mot de votre choix.
   - Exemple pour changer le préfixe en `!` :
     ```python
     bot = commands.Bot(command_prefix="!", intents=discord.Intents.all(), help_command=None, activity=discord.Streaming(name="Snusbot by xDatabase", url="https://www.twitch.tv/rickyrollstar"), status=presence_type)
@@ -81,24 +80,24 @@ bot = commands.Bot(command_prefix="-", intents=discord.Intents.all(), help_comma
 
 ### 2. **Configurer le Token du Bot**
 
-Le token de votre bot Discord doit être renseigné à la ligne **462** du fichier `bot.py`. Ce token est requis pour que le bot puisse se connecter à Discord.
+Pour des raisons de sécurité et de flexibilité, le token du bot est maintenant stocké dans une variable au début du fichier, à la ligne **6**. Cette variable doit contenir le token de votre bot Discord pour permettre la connexion à l'API.
+
+- À la ligne **6**, définissez la variable `TOKEN` avec votre propre token :
 
 ```python
-bot.run("Ton token")
+TOKEN = "VOTRE_TOKEN_DISCORD_ICI"
 ```
 
-- Remplacez `"Ton token"` par votre propre token de bot Discord.
-  - Exemple :
-    ```python
-    bot.run("VOTRE_TOKEN_DISCORD_ICI")
-    ```
+- Ensuite, à la ligne **462**, le bot utilise cette variable pour se connecter :
+
+```python
+bot.run(TOKEN)
+```
 
 ⚠️ **Important :**  
-Ne partagez jamais votre token publiquement, car il permet à n'importe qui de contrôler votre bot.
+Ne partagez jamais votre token publiquement. Si quelqu'un a accès à ce token, il pourra prendre le contrôle de votre bot.
 
 ---
-
-Avec cette section de configuration, les utilisateurs sauront exactement où et comment modifier les paramètres du bot, notamment le préfixe et le token.
 
 ## 🔧 **Utilisation**
 
