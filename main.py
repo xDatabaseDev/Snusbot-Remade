@@ -3,6 +3,7 @@ from discord.ext import commands
 import requests
 import io
 import json
+TOKEN = "Ton token"
 from datetime import timezone, timedelta, datetime
 import os
 from credit_manager import CreditManager
@@ -275,7 +276,7 @@ async def userinfo(ctx, id: int):
             return
         url = f'https://discord.com/api/v9/users/{id}'
         headers = {
-            'Authorization': f'Bot ',
+            'Authorization': f'Bot {TOKEN}',
             'Content-Type': 'application/json',
         }
 
@@ -459,4 +460,4 @@ async def help(ctx):
 
 
 
-bot.run("Ton token")
+bot.run(TOKEN)
