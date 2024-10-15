@@ -55,7 +55,7 @@ Ce projet a pour but de recréer le bot original de Snusbase, tout en le rendant
 
 5. Lancez le bot :
    ```bash
-   python bot.py
+   python main.py
    ```
 
 ---
