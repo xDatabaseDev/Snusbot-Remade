@@ -25,6 +25,7 @@ Ce projet a pour but de recréer le bot original de Snusbase, tout en le rendant
 - `credits.json` : Fichier où sont stockés les crédits des utilisateurs.
 - `admin.json` : Fichier pour gérer les administrateurs.
 - `credit_manager.py` : Fichier qui gère les crédits.
+- `user_data.json` : Fichier qui gère les arrivées.
 
 
 ---
